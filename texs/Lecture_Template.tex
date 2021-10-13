@@ -1,0 +1,98 @@
+\documentclass{article}
+\setlength{\oddsidemargin}{0 in}
+\setlength{\evensidemargin}{0 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.25 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{cmbright}
+\usepackage{lipsum}
+
+\newcounter{lecture}
+\newenvironment{lecture}[2][]{\refstepcounter{lecture}{\Large Lecture~\thelecture #1, #2 } \par\vspace{0.2 in}}{\newpage}
+\newcommand{\topic}[1]{{\par\smallskip\textbf{#1} \par}}
+
+\swapnumbers
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[lecture]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exmp}[thm]{Example}
+\newtheorem{axiom}[thm]{Axiom}
+\newtheorem{ques}[thm]{Question}
+\newtheorem{exer}[thm]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem*{note}{Note}
+\newtheorem*{nota}{Notation}
+\newtheorem*{rem}{Remark}
+\newtheorem*{claim}{Claim}
+\newtheorem*{solution}{Solution}
+
+\begin{document}
+
+% create title page
+%
+%\begin{titlepage}
+%    \begin{center}
+%        \vspace*{6cm}
+%        {\Huge Title}
+
+%        \vspace{1cm}
+
+%        {\huge Subtitle}
+
+%        \vspace{2.5cm}
+
+%        {\LARGE Author Name}
+%        \vfill
+%    \end{center}
+%\end{titlepage}
+
+
+\begin{lecture}{Oct. 7}   
+
+\begin{thm}\lipsum[66]\end{thm}
+
+\begin{proof}\lipsum[7]\end{proof}
+
+\begin{exmp}\lipsum[75]\end{exmp}
+
+\begin{rem}\lipsum[6-7]\end{rem}
+
+\begin{cor}\lipsum[90]\end{cor}
+
+\begin{proof}\lipsum[9-11]\end{proof}
+
+\end{lecture}
+
+
+
+\begin{lecture}{Oct. 8}
+
+\begin{thm}\lipsum[66]\end{thm}
+
+\begin{proof}\lipsum[7]\end{proof}
+
+\begin{exmp}\lipsum[75]\end{exmp}
+
+\begin{rem}\lipsum[6-7]\end{rem}
+
+\begin{cor}\lipsum[90]\end{cor}
+
+\begin{proof}\lipsum[9-11]\end{proof}
+
+\end{lecture}
+
+
+\end{document}
